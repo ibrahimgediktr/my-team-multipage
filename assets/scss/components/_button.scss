@@ -1,0 +1,50 @@
+.btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: $transition;
+    font-weight: normal;
+    font-family: $font;
+    border-radius: 500px;
+}
+
+@mixin btn-small{
+    padding: 9 32px;
+    font-size: 13px;
+}
+
+@mixin btn-large{
+    padding: 9px 32px;
+    font-size: 18px;
+}
+
+@mixin btn-primary{
+    background: transparent;
+    color: $white;
+    border: 2px solid $white;
+    &:hover{
+        background: $white;
+        color: $sacramentoGreen;
+    }
+}
+
+@mixin btn-secodary{
+    background: transparent;
+    border:2px solid $sacramentoGreen;
+    color: $sacramentoGreen;
+    &:hover{
+        background: $sacramentoGreen;
+        color: $white;
+    }
+
+}
+
+@mixin btn-tertiary{
+    background: $white;
+    color: $sacramentoGreen;
+    &:hover{
+        background: $raptureBlue;
+        color: $sacramentoGreen;
+        border-color: $raptureBlue;
+    }
+}

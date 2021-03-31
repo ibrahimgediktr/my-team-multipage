@@ -1,0 +1,10 @@
+@keyframes navLinkFade {
+    from{
+        transform: translateX(100) scale(1.2);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
