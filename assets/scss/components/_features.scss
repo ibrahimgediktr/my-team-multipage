@@ -1,87 +1,87 @@
-.features{
+.features {
     background: $sacramentoGreen;
     padding: 140px 0;
     position: relative;
     overflow: hidden;
-    @include mq('md'){
-        padding:100px 0;
+    @include mq("md") {
+        padding: 100px 0;
     }
-    @include mq('sm'){
+    @include mq("sm") {
         padding: 64px 0;
     }
-    .features-after-bg{
+    .features-after-bg {
         position: absolute;
-        right:-100px;
+        right: -100px;
         bottom: -30px;
-        @include mq('lg'){
+        @include mq("lg") {
             bottom: -100px;
         }
-        @include mq('md'){
+        @include mq("md") {
             top: 0;
             right: -100px;
             bottom: unset;
             opacity: 0.4;
         }
-        @include mq('sm'){
+        @include mq("sm") {
             opacity: 0.4;
         }
     }
-    &-container{
+    &-container {
         @include container;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         grid-gap: 7%;
-        @include mq('md'){
+        @include mq("md") {
             grid-template-columns: 1fr;
         }
-        .features-heading{
+        .features-heading {
             position: relative;
             margin-top: 35px;
             z-index: 1;
             font-weight: 700;
-            @include mq('md'){
-               padding-right: 100px;
+            @include mq("md") {
+                padding-right: 100px;
             }
-                &::before{
-                    content: "";
-                    position: absolute;
-                    background: $lightCoral;
-                    width: 50px;
-                    height: 4px;
-                    top: -35px;
-                    margin-bottom: 54px;
-                }
+            &::before {
+                content: "";
+                position: absolute;
+                background: $lightCoral;
+                width: 50px;
+                height: 4px;
+                top: -35px;
+                margin-bottom: 54px;
+            }
         }
-        .features-list{
+        .features-list {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            &-item{
+            &-item {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 48px;
-                @include mq('sm'){
+                @include mq("sm") {
                     flex-direction: column;
                 }
-                &:first-child{
-                    .features-list-item-image{
+                &:first-child {
+                    .features-list-item-image {
                         margin-left: 8px;
                     }
                 }
-                &-image{
+                &-image {
                     margin-right: 24px;
                 }
-                &-text{
-                    @include mq('sm'){
+                &-text {
+                    @include mq("sm") {
                         text-align: center;
                     }
-                    &-heading{
+                    &-heading {
                         color: $lightCoral;
                         margin-bottom: 16px;
                     }
-                    &-description{
+                    &-description {
                         color: $white;
                         line-height: $lineHeight;
                     }
