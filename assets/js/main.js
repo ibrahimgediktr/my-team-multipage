@@ -2,6 +2,7 @@ $(document).ready(function () {
     var toggleMenu = $('.toggle-menu');
     var navList = $('.navbar-list');
     var navLinks = $('.navbar-link');
+    var nav = $('.navbar')
 
     toggleMenu.click(function () {
         navList.toggleClass('active');
@@ -15,6 +16,14 @@ $(document).ready(function () {
             scale:1,
             stagger:0.2
         })
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+        nav.addClass("scrolled");
+        } else {
+        nav.removeClass("scrolled");
+        }
     });
 
 
@@ -86,12 +95,12 @@ $(document).ready(function () {
     gsap.from('.hero-heading', {
         delay:1,
         opacity:0,
-        y:50,
+        y:40,
     })
     gsap.from('.hero-description', {
         delay:1.2,
         opacity:0,
-        y:50,
+        y:40,
     })
 })
 
