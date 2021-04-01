@@ -39,6 +39,7 @@
             position: relative;
             margin-top: 35px;
             z-index: 1;
+            font-weight: 700;
             @include mq('md'){
                padding-right: 100px;
             }
