@@ -546,6 +546,90 @@ h3 {
   border: 2px solid #c4fffe;
 }
 
+.cta {
+  background: #f67e7e;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-after-bg {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .cta-after-bg {
+    left: -50px;
+    bottom: -15px;
+    opacity: 0.5;
+  }
+}
+
+.cta-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 76px 100px !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .cta-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .cta-container {
+    padding: 84px 24px !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.cta-container .cta-heading {
+  color: #012f34;
+  font-weight: 700;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .cta-container .cta-heading {
+    margin-bottom: 28px;
+  }
+}
+
+.cta-container .cta-btn {
+  background: transparent;
+  border: 2px solid #012f34;
+  color: #012f34;
+  padding: 9px 32px;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.cta-container .cta-btn:hover {
+  background: #012f34;
+  color: #ffffff;
+}
+
 .navbar {
   z-index: 2;
   margin-top: 64px;

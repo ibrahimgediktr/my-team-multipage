@@ -1,0 +1,41 @@
+.cta {
+    background: $lightCoral;
+    position: relative;
+    overflow:hidden;
+    &-after-bg{
+        position: absolute;
+        left:0;
+        bottom: -3px;
+        transition: opacity 0.25s ease-in-out;
+        @include mq('sm'){
+            left:-50px;
+            bottom: -15px;
+            opacity: 0.5;
+        }
+    }
+    &-container {
+        @include container;
+        display: flex;
+        padding: 76px 100px !important;
+        justify-content: center;
+        align-items: center;
+        @include mq("lg") {
+            padding: 84px 24px !important;
+            flex-direction: column;
+        }
+        .cta-heading {
+            color: $sacramentoGreen;
+            font-weight: 700;
+            flex: 1 1 auto;
+            text-align: center;
+            @include mq("lg") {
+                margin-bottom: 28px;
+            }
+        }
+        .cta-btn {
+            @include btn-secondary;
+            @include btn-large;
+            z-index: 1;
+        }
+    }
+}
