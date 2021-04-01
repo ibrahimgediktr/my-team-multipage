@@ -107,32 +107,6 @@ h2 {
   font-size: 18px;
 }
 
-@-webkit-keyframes navLinkFade {
-  from {
-    -webkit-transform: translateX(100) scale(1.2);
-            transform: translateX(100) scale(1.2);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0) scale(1);
-            transform: translateX(0) scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes navLinkFade {
-  from {
-    -webkit-transform: translateX(100) scale(1.2);
-            transform: translateX(100) scale(1.2);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0) scale(1);
-            transform: translateX(0) scale(1);
-    opacity: 1;
-  }
-}
-
 .btn {
   outline: none;
   border: none;
@@ -147,29 +121,26 @@ h2 {
 .hero {
   background: #014e56;
   position: relative;
-  overflow-x: hidden;
 }
 
-.hero::before {
-  content: url("../images/bg-pattern-home.svg");
+.hero-before-bg {
   position: absolute;
-  left: -5%;
+  left: -100px;
   top: 30%;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 
-@media (max-width: 992px) {
-  .hero::before {
-    display: none;
+@media (max-width: 1200px) {
+  .hero-before-bg {
+    opacity: 0.3;
   }
 }
 
-.hero::after {
-  content: url("../images/bg-pattern-home-2.svg");
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+@media (max-width: 992px) {
+  .hero-before-bg {
+    opacity: 0.15;
+  }
 }
 
 .hero-container {
@@ -187,6 +158,8 @@ h2 {
           align-items: flex-end;
   padding-top: 250px;
   padding-bottom: 250px;
+  position: relative;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -266,12 +239,27 @@ h2 {
   background: #79c8c7;
   width: 50px;
   height: 4px;
-  top: -25px;
+  top: -35px;
 }
 
 @media (max-width: 992px) {
   .hero-container .hero-description::before {
     display: none;
+  }
+}
+
+.hero-container .hero-after-bg {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-container .hero-after-bg {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    right: unset;
   }
 }
 
