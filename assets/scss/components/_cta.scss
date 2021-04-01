@@ -18,16 +18,18 @@
         display: flex;
         padding: 76px 100px !important;
         justify-content: center;
+        gap: 20%;
         align-items: center;
         @include mq("lg") {
             padding: 84px 24px !important;
             flex-direction: column;
+            
         }
         .cta-heading {
             color: $sacramentoGreen;
             font-weight: 700;
-            flex: 1 1 auto;
             text-align: center;
+            z-index: 1;
             @include mq("lg") {
                 margin-bottom: 28px;
             }
@@ -36,6 +38,8 @@
             @include btn-secondary;
             @include btn-large;
             z-index: 1;
+            white-space: nowrap;
+            max-height: 45px;
         }
     }
 }
