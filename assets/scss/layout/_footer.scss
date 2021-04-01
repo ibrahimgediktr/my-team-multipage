@@ -1,0 +1,92 @@
+.footer{
+    background: $darkGreen;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    @include mq('lg'){
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+    @include mq('md'){
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    &-container{
+        @include container;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        'logo address . social'
+        'navigation address . copyright'
+        ;
+        @include mq('md'){
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            'logo'
+            'navigation'
+            'address'
+            'social'
+            'copyright'
+            ;
+            justify-items: center;
+            grid-row-gap: 32px;
+        }
+        .footer-logo{
+            grid-area: logo;
+        }
+        .footer-nav-list{
+            grid-area: navigation;
+            display: flex;
+            align-self: flex-end;
+            @include mq('md'){
+                align-self: unset;
+            }
+            .footer-nav-link{
+                margin-right: 16px;
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+        .footer-address{
+            grid-area: address;
+            color: $veryWhite;
+            @include mq('md'){
+                text-align: center;
+            }
+            p, a{
+                margin-bottom: 8px;
+            }
+            a{
+                color: $veryWhite;
+            }
+        }
+        .footer-social-list{
+            grid-area: social;
+            display: flex;
+            justify-self: end;
+            @include mq('md'){
+                justify-self: unset;
+            }
+            .footer-social-link{
+                margin-left: 16px;
+                @include mq('md'){
+                    margin:0 8px;
+                }
+                a{
+                    i{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .footer-copyright{
+            justify-self: end;
+            align-self: flex-end;
+            grid-area: copyright;
+            color: $veryWhite;
+            @include mq('md'){
+                justify-self: unset;
+            }
+        }
+    }
+}
