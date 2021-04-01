@@ -28,14 +28,14 @@ h2{
 	color: $white;
     font-size: 48px;
 	@include mq('lg'){
-        font-size:32px;  
+        font-size:40px;  
       }
       @include mq('md'){
-        font-size: 40px;
+        font-size: 32px;
       }
 }
 
-h2{
+h3{
 	font-family: $font;
 	color: $white;
     font-size: 18px;
