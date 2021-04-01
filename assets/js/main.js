@@ -138,7 +138,6 @@ $(document).ready(function () {
             trigger: '.features-list-item',
             start: 'top 80%',
             end: 'top 20%',
-            markers: true,
             onEnter: () => gsap.to(elems, {
                 x: 0,
                 opacity: 1,
