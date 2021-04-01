@@ -1,0 +1,83 @@
+.testimonials{
+    background: $midnightGreen;
+    padding: 140px 0;
+    position: relative;
+    overflow:hidden;
+    @include mq('lg') {
+        padding: 100px 0;
+    }
+    @include mq('sm'){
+        padding: 140px 0;
+    }
+    .testimonial-before-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .testimonial-after-bg{
+        position: absolute;
+        right:0;
+        bottom:-5px;
+    }
+    &-container{
+        @include container;
+        .testimonial-heading{
+            margin-bottom: 56px;
+            text-align: center;
+            font-weight: 700;
+            span{
+                color: $raptureBlue;
+            }
+            padding-left: 92px;
+            padding-right: 92px;
+            @include mq('lg'){
+                padding: 0;
+            }
+        }
+        .testimonials-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            grid-column-gap: 30px;
+            @include mq('lg'){
+                grid-template-columns: 1fr;
+                grid-row-gap: 30px;
+            }
+            &-item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin-top: 48px;
+                &-bg{
+                    position: absolute;
+                    top: -38px;
+                    z-index: 0;
+                }
+                &-quote{
+                    text-align: center;
+                    color: $white;
+                    margin-bottom: 36px;
+                    line-height: $lineHeight;
+                    z-index: 1;
+                }
+                &-name{
+                    margin-bottom: 4px;
+                    color: $raptureBlue;
+                }
+                &-title{
+                    margin-bottom: 2px;
+                    margin-bottom: 16px;
+                    font-style: italic;
+                    color: $white;
+                }
+                &-avatar{
+                    width: 62px;
+                    border-radius: 50%;
+                    border:2px solid $robinBlue;
+                }
+            }
+        }
+    }
+}
