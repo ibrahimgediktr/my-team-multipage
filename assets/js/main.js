@@ -107,142 +107,154 @@ $(document).ready(function () {
     // Features Section Animation
     gsap.registerPlugin(ScrollTrigger);
 
-
-    gsap.set('.features-heading', {
-        x: -1000,
-        opacity: 0
-    })
-
-    ScrollTrigger.create({
-        trigger: '.features-heading',
-        start: 'top 90%',
-        end: 'top 10%',
-        onEnter: () => gsap.to('.features-heading', {
-            x: 0,
-            opacity: 1,
-        }),
-        onLeaveBack: () => gsap.to('.features-heading', {
-            x: -1000,
-            opacity: 0,
-        })
-    })
-
-    gsap.utils.toArray('.features-list').forEach(() => {
-        var elems = $('.features-list-item');
-
-        gsap.set(elems, {
-            x: 1000,
-            opacity: 0,
-        })
-        ScrollTrigger.create({
-            trigger: '.features-list-item',
-            start: 'top 80%',
-            end: 'top 20%',
-            onEnter: () => gsap.to(elems, {
-                x: 0,
-                opacity: 1,
-                stagger: 0.2,
-                delay: 0.2,
-            }),
-            onLeaveBack: () => gsap.to(elems, {
-                x: 1000,
-                opacity: 0,
-                duration: 0.5,
-                stagger: 0.2,
-                delay: 0.2,
-            })
-        })
-    });
-
-    gsap.set('.features-after-bg', {
-        x: 1000,
-        opacity: 0
-    });
-    gsap.set('.features-after-bg-path-1', {
-        scaleY: 0,
-        opacity: 0
-    });
-    gsap.set('.features-after-bg-path-2', {
-        scale: 0,
-        opacity: 0
-    });
-    gsap.set('.features-after-bg-path-3', {
-        scaleY: 0,
-        opacity: 0
-    });
-
     ScrollTrigger.create({
         trigger: '.features-after-bg',
-        start: 'top 90%',
-        end: 'top 10%',
-        onEnter: () => gsap.to('.features-after-bg', {
-            x: 0,
-            opacity: 1,
-            delay: 0.4,
-        }),
-        onLeaveBack: () => gsap.to('.features-after-bg', {
-            x: 1000,
-            opacity: 0,
-            delay: 0.4,
-        })
-    })
-    ScrollTrigger.create({
-        trigger: '.features-after-bg-path-1',
-        start: 'top 90%',
-        end: 'top 10%',
-        onEnter: () => gsap.to('.features-after-bg-path-1', {
-            scaleY: 1,
-            opacity: 1,
-            delay: 0.6,
-        }),
-        onLeaveBack: () => gsap.to('.features-after-bg-path-1', {
-            scaleY: 0,
-            opacity: 0,
-            delay: 0.6,
-        })
+        toggleClass: 'active',
+        start: 'top 85%',
+        end: 'top 15%',
     })
 
     ScrollTrigger.create({
-        trigger: '.features-after-bg-path-1',
-        start: 'top 90%',
-        end: 'top 10%',
-        onEnter: () => gsap.to('.features-after-bg-path-2', {
-            scale: 1,
-            opacity: 1,
-            delay: 0.8,
-        }),
-        onLeaveBack: () => gsap.to('.features-after-bg-path-2', {
-            scale: 0,
-            opacity: 0,
-            delay: 0.8,
-        })
+        trigger: '.testimonial-before-bg',
+        toggleClass: 'active',
+        start: 'top 75%',
+        end: 'top 0%',
     })
 
     ScrollTrigger.create({
-        trigger: '.features-after-bg-path-3',
+        trigger: '.testimonial-after-bg',
+        toggleClass: 'active',
         start: 'top 90%',
-        end: 'top 10%',
-        onEnter: () => gsap.to('.features-after-bg-path-3', {
-            scale: 1,
-            opacity: 1,
-            delay: 1,
-        }),
-        onLeaveBack: () => gsap.to('.features-after-bg-path-3', {
-            scaleY: 0,
-            opacity: 0,
-            delay: 1,
-        })
+        end: 'top 0%',
     })
 
 
 
+    //     gsap.set('.features-heading', {
+    //         x: -1000,
+    //         opacity: 0
+    //     })
 
+    //     ScrollTrigger.create({
+    //         trigger: '.features-heading',
+    //         start: 'top 90%',
+    //         end: 'top 10%',
+    //         onEnter: () => gsap.to('.features-heading', {
+    //             x: 0,
+    //             opacity: 1,
+    //         }),
+    //         onLeaveBack: () => gsap.to('.features-heading', {
+    //             x: -1000,
+    //             opacity: 0,
+    //         })
+    //     })
 
+    //     gsap.utils.toArray('.features-list').forEach(() => {
+    //         var elems = $('.features-list-item');
 
+    //         gsap.set(elems, {
+    //             x: 1000,
+    //             opacity: 0,
+    //         })
+    //         ScrollTrigger.create({
+    //             trigger: '.features-list-item',
+    //             start: 'top 80%',
+    //             end: 'top 20%',
+    //             onEnter: () => gsap.to(elems, {
+    //                 x: 0,
+    //                 opacity: 1,
+    //                 stagger: 0.2,
+    //                 delay: 0.2,
+    //             }),
+    //             onLeaveBack: () => gsap.to(elems, {
+    //                 x: 1000,
+    //                 opacity: 0,
+    //                 duration: 0.5,
+    //                 stagger: 0.2,
+    //                 delay: 0.2,
+    //             })
+    //         })
+    //     });
 
+    //     gsap.set('.features-after-bg', {
+    //         x: 1000,
+    //         opacity: 0
+    //     });
+    //     gsap.set('.features-after-bg-path-1', {
+    //         scaleY: 0,
+    //         opacity: 0
+    //     });
+    //     gsap.set('.features-after-bg-path-2', {
+    //         scale: 0,
+    //         opacity: 0
+    //     });
+    //     gsap.set('.features-after-bg-path-3', {
+    //         scaleY: 0,
+    //         opacity: 0
+    //     });
 
+    //     ScrollTrigger.create({
+    //         trigger: '.features-after-bg',
+    //         start: 'top 90%',
+    //         end: 'top 10%',
+    //         onEnter: () => gsap.to('.features-after-bg', {
+    //             x: 0,
+    //             opacity: 1,
+    //             delay: 0.4,
+    //         }),
+    //         onLeaveBack: () => gsap.to('.features-after-bg', {
+    //             x: 1000,
+    //             opacity: 0,
+    //             delay: 0.4,
+    //         })
+    //     })
+    //     ScrollTrigger.create({
+    //         trigger: '.features-after-bg-path-1',
+    //         start: 'top 90%',
+    //         end: 'top 10%',
+    //         onEnter: () => gsap.to('.features-after-bg-path-1', {
+    //             scaleY: 1,
+    //             opacity: 1,
+    //             delay: 0.6,
+    //         }),
+    //         onLeaveBack: () => gsap.to('.features-after-bg-path-1', {
+    //             scaleY: 0,
+    //             opacity: 0,
+    //             delay: 0.6,
+    //         })
+    //     })
 
+    //     ScrollTrigger.create({
+    //         trigger: '.features-after-bg-path-1',
+    //         start: 'top 90%',
+    //         end: 'top 10%',
+    //         onEnter: () => gsap.to('.features-after-bg-path-2', {
+    //             scale: 1,
+    //             opacity: 1,
+    //             delay: 0.8,
+    //         }),
+    //         onLeaveBack: () => gsap.to('.features-after-bg-path-2', {
+    //             scale: 0,
+    //             opacity: 0,
+    //             delay: 0.8,
+    //         })
+    //     })
 
+    //     ScrollTrigger.create({
+    //         trigger: '.features-after-bg-path-3',
+    //         start: 'top 90%',
+    //         end: 'top 10%',
+    //         onEnter: () => gsap.to('.features-after-bg-path-3', {
+    //             scale: 1,
+    //             opacity: 1,
+    //             delay: 1,
+    //         }),
+    //         onLeaveBack: () => gsap.to('.features-after-bg-path-3', {
+    //             scaleY: 0,
+    //             opacity: 0,
+    //             delay: 1,
+    //         })
+    //     })
 })
 
 console.log('javascript is running');

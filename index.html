@@ -8,6 +8,7 @@
     <title>My Team Multipage</title>
     <link rel="stylesheet" href="./assets/scss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -73,10 +74,10 @@
     </section>
 
     <section class="features">
-        <div class="features-container">
-            <h2 class="features-heading">Build & manage distributed teams like no one else.</h2>
-            <ul class="features-list">
-                <li class="features-list-item">
+        <div class="features-container" style="overflow-x: hidden;">
+            <h2 class="features-heading" data-aos="fade-right" data-aos-delay="50">Build & manage distributed teams like no one else.</h2>
+            <ul class="features-list" style="overflow-x: hidden;">
+                <li class="features-list-item" data-aos="fade-left" data-aos-delay="150">
                     <img src="./assets/icons/icon-person.svg" alt="" class="features-list-item-image">
                     <div class="features-list-item-text">
                         <h3 class="features-list-item-text-heading">Experienced Individuals</h3>
@@ -84,7 +85,7 @@
                             professionals who are passionate about what they do.</p>
                     </div>
                 </li>
-                <li class="features-list-item">
+                <li class="features-list-item" data-aos="fade-left" data-aos-delay="300">
                     <img src="./assets/icons/icon-cog.svg" alt="" class="features-list-item-image">
                     <div class="features-list-item-text">
                         <h3 class="features-list-item-text-heading">Easy to Implement</h3>
@@ -92,7 +93,7 @@
                             implementation meaning our teams always deliver.</p>
                     </div>
                 </li>
-                <li class="features-list-item">
+                <li class="features-list-item" data-aos="fade-left" data-aos-delay="450">
                     <img src="./assets/icons/icon-chart.svg" alt="" class="features-list-item-image">
                     <div class="features-list-item-text">
                         <h3 class="features-list-item-text-heading">Enhanced Productivity</h3>
@@ -126,10 +127,10 @@
             </svg>
         </div>
         <div class="testimonials-container">
-            <h2 class="testimonial-heading">Delivering real results for top companies. Some of our <span>success
+            <h2 class="testimonial-heading" data-aos="zoom-out" data-aos-delay="50" >Delivering real results for top companies. Some of our <span>success
                     stories.</span></h2>
             <div class="testimonials-grid">
-                <div class="testimonials-grid-item">
+                <div class="testimonials-grid-item" data-aos="zoom-in" data-aos-delay="150" >
                     <div class="testimonials-grid-item-bg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="67" height="56">
                             <path fill="#2C6269"
@@ -143,7 +144,7 @@
                     <p class="testimonials-grid-item-title">Product Manager at Bookmark</p>
                     <img src="./assets/images/avatar-kady.jpg" alt="" class="testimonials-grid-item-avatar">
                 </div>
-                <div class="testimonials-grid-item">
+                <div class="testimonials-grid-item" data-aos="zoom-in" data-aos-delay="300">
                     <div class="testimonials-grid-item-bg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="67" height="56">
                             <path fill="#2C6269"
@@ -158,7 +159,7 @@
                     <img src="./assets/images/avatar-aiysha.jpg" alt="" class="testimonials-grid-item-avatar">
 
                 </div>
-                <div class="testimonials-grid-item">
+                <div class="testimonials-grid-item" data-aos="zoom-in" data-aos-delay="450">
                     <div class="testimonials-grid-item-bg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="67" height="56">
                             <path fill="#2C6269"
@@ -177,10 +178,10 @@
         <div class="testimonial-after-bg">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100">
                 <g fill="none" fill-rule="evenodd">
-                    <path fill="#2C6269" d="M100 100h100V0H100z" />
-                    <path fill="#012F34"
+                    <path class="testimonials-after-bg-path-1" fill="#2C6269" d="M100 100h100V0H100z" />
+                    <path class="testimonials-after-bg-path-2" fill="#012F34"
                         d="M100 0C44.772 0 0 44.772 0 100s44.772 100 100 100 100-44.772 100-100S155.228 0 100 0zm0 67c18.225 0 33 14.775 33 33s-14.775 33-33 33-33-14.775-33-33 14.775-33 33-33z" />
-                    <path fill="#79C8C7"
+                    <path class="testimonials-after-bg-path-3" fill="#79C8C7"
                         d="M100 96v4h100v-4H100zm0-8v4h100v-4H100zm0-8v4h100v-4H100zm0-8v4h100v-4H100zm0-8v4h100v-4H100zm0-8v4h100v-4H100z" />
                 </g>
             </svg>
@@ -254,9 +255,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

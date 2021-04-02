@@ -1,81 +1,97 @@
-.testimonials{
+.testimonials {
     background: $midnightGreen;
     padding: 140px 0;
     position: relative;
-    overflow:hidden;
-    @include mq('lg') {
+    overflow: hidden;
+    @include mq("lg") {
         padding: 100px 0;
     }
-    @include mq('sm'){
+    @include mq("sm") {
         padding: 140px 0;
     }
-    .testimonial-before-bg{
+    .testimonial-before-bg {
         position: absolute;
         top: 0;
         left: 0;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: 0.6s;
+        transition-delay: 0.6s;
+        &.active {
+            transform: scaleX(1);
+            transition-delay: 0s;
+        }
     }
-    .testimonial-after-bg{
+    .testimonial-after-bg {
         position: absolute;
-        right:0;
-        bottom:-5px;
+        right: 0;
+        bottom: -5px;
+        transform-origin: right;
+        transform: scale(4) translateX(200px);
+        transition: 0.6s;
+        transition-delay: 0.6s;
+        &.active {
+            transform: scale(1) translateX(0);
+            transition-delay: 0s;
+        }
     }
-    &-container{
+    &-container {
         @include container;
-        .testimonial-heading{
+        .testimonial-heading {
             margin-bottom: 56px;
             text-align: center;
             font-weight: 700;
-            span{
+            span {
                 color: $raptureBlue;
             }
             padding-left: 92px;
             padding-right: 92px;
-            @include mq('lg'){
+            @include mq("lg") {
                 padding: 0;
             }
         }
-        .testimonials-grid{
+        .testimonials-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             justify-items: center;
             grid-column-gap: 30px;
-            @include mq('lg'){
+            @include mq("lg") {
                 grid-template-columns: 1fr;
                 grid-row-gap: 30px;
             }
-            &-item{
+            &-item {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 position: relative;
                 margin-top: 48px;
-                &-bg{
+                &-bg {
                     position: absolute;
                     top: -38px;
                     z-index: 0;
                 }
-                &-quote{
+                &-quote {
                     text-align: center;
                     color: $white;
                     margin-bottom: 36px;
                     line-height: $lineHeight;
                     z-index: 1;
                 }
-                &-name{
+                &-name {
                     margin-bottom: 4px;
                     color: $raptureBlue;
                 }
-                &-title{
+                &-title {
                     margin-bottom: 2px;
                     margin-bottom: 16px;
                     font-style: italic;
                     color: $white;
                 }
-                &-avatar{
+                &-avatar {
                     width: 62px;
                     border-radius: 50%;
-                    border:2px solid $robinBlue;
+                    border: 2px solid $robinBlue;
                 }
             }
         }

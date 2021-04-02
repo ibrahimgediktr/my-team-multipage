@@ -13,6 +13,14 @@
         position: absolute;
         right: -100px;
         bottom: -30px;
+        transform-origin: right;
+        transform: scaleY(0) translateX(100px);
+        transition: 0.45s;
+        transition-delay: 0.15s;
+        &.active {
+            transform: scaleY(1) translateX(0);
+            transition-delay: 0s;
+        }
         @include mq("lg") {
             bottom: -100px;
         }
