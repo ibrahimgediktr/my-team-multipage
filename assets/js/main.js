@@ -128,6 +128,13 @@ $(document).ready(function () {
         end: 'top 0%',
     })
 
+    
+    ScrollTrigger.create({
+        trigger:'.cta-after-bg',
+        toggleClass: 'active',
+        start: 'top 80%',
+        end: 'top 0%',
+    })
 
 
     //     gsap.set('.features-heading', {
