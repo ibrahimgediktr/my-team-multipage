@@ -147,6 +147,7 @@
                         transition: transform 0.25s ease-in-out;
                     }
                     &.active {
+                        background: $raptureBlue;
                         svg {
                             transform: rotate(45deg);
                         }

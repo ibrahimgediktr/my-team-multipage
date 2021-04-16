@@ -111,8 +111,6 @@ h3 {
   outline: none;
   border: none;
   cursor: pointer;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
   font-weight: normal;
   font-family: "Livvic", sans-serif;
   border-radius: 500px;
@@ -679,6 +677,8 @@ h3 {
   background: transparent;
   border: 2px solid #012f34;
   color: #012f34;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 9px 32px;
   font-size: 18px;
   z-index: 1;
@@ -688,6 +688,14 @@ h3 {
 
 .cta-container .cta-btn:hover {
   background: #012f34;
+  color: #ffffff;
+}
+
+.cta-container .cta-btn a {
+  color: #012f34;
+}
+
+.cta-container .cta-btn:hover a {
   color: #ffffff;
 }
 
@@ -832,6 +840,10 @@ h3 {
   color: #012f34;
 }
 
+.navbar-container .navbar-list .navbar-link .mobile-navbar-btn:hover a {
+  color: #012f34;
+}
+
 @media (max-width: 768px) {
   .navbar-container .navbar-list .navbar-link .mobile-navbar-btn {
     display: block;
@@ -848,6 +860,10 @@ h3 {
 
 .navbar-container .navbar-btn:hover {
   background: #ffffff;
+  color: #012f34;
+}
+
+.navbar-container .navbar-btn:hover a {
   color: #012f34;
 }
 
@@ -1310,6 +1326,10 @@ h3 {
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
+.directors-container .directors-card-grid .directors-card-btn.active {
+  background: #79c8c7;
+}
+
 .directors-container .directors-card-grid .directors-card-btn.active svg {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1640,6 +1660,8 @@ h3 {
 .contact-container .contact-form-btn {
   background: #ffffff;
   color: #012f34;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 9px 32px;
   font-size: 18px;
 }
