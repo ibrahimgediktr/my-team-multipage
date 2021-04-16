@@ -2,7 +2,6 @@
     outline: none;
     border: none;
     cursor: pointer;
-    transition: $transition;
     font-weight: normal;
     font-family: $font;
     border-radius: 500px;
@@ -25,13 +24,18 @@
     &:hover{
         background: $white;
         color: $sacramentoGreen;
+        a{
+            color: $sacramentoGreen;
+        }
     }
+    
 }
 
 @mixin btn-secondary{
     background: transparent;
     border:2px solid $sacramentoGreen;
     color: $sacramentoGreen;
+    transition: all 0.3s ease-in-out;
     &:hover{
         background: $sacramentoGreen;
         color: $white;
@@ -42,6 +46,7 @@
 @mixin btn-tertiary{
     background: $white;
     color: $sacramentoGreen;
+    transition: all 0.3s ease-in-out;
     &:hover{
         background: $raptureBlue;
         color: $sacramentoGreen;
