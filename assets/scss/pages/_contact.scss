@@ -65,6 +65,7 @@
                     height: 30px;
                     outline: none;
                     color: $white;
+                    font-family: $font;
                     &:focus {
                         color: $lightCoral;
                         border-color: $lightCoral;
@@ -86,6 +87,7 @@
                     border-bottom: 2px solid $white;
                     color: $white;
                     outline: none;
+                    font-family: $font;
                     &:focus {
                         color: $lightCoral;
                         border-color: $lightCoral;
@@ -94,6 +96,10 @@
                         }
                     }
                 }
+            }
+            &-btn{
+                @include btn-tertiary;
+                @include btn-large;
             }
         }
     }

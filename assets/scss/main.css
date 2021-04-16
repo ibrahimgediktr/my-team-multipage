@@ -1599,6 +1599,7 @@ h3 {
   height: 30px;
   outline: none;
   color: #ffffff;
+  font-family: "Livvic", sans-serif;
 }
 
 .contact-container .contact-form .form-control input:focus {
@@ -1624,6 +1625,7 @@ h3 {
   border-bottom: 2px solid #ffffff;
   color: #ffffff;
   outline: none;
+  font-family: "Livvic", sans-serif;
 }
 
 .contact-container .contact-form .form-control textarea:focus {
@@ -1633,5 +1635,18 @@ h3 {
 
 .contact-container .contact-form .form-control textarea:focus + label {
   color: #f67e7e;
+}
+
+.contact-container .contact-form-btn {
+  background: #ffffff;
+  color: #012f34;
+  padding: 9px 32px;
+  font-size: 18px;
+}
+
+.contact-container .contact-form-btn:hover {
+  background: #79c8c7;
+  color: #012f34;
+  border-color: #79c8c7;
 }
 /*# sourceMappingURL=main.css.map */
