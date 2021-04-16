@@ -1,0 +1,101 @@
+.contact{
+    background-color: $midnightGreen;
+    &-container{
+        @include container;
+        padding: 160px 0px 100px;
+        display: flex;
+        align-items: center;
+        @include mq('lg'){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .contact-header{
+            width: 50%;
+            @include mq('lg'){
+                width: 100%;
+            }
+            &-heading{
+                font-size: 64px;
+                @include mq('lg'){
+                    font-size: 40px;
+                }
+            }
+            &-subheading{
+                font-size: 32px;
+                color: $lightCoral;
+                margin:64px 0px 32px
+            }
+            &-questions-list{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                &-item{
+                    display: flex;
+                    align-items: center;
+                    margin:8px 0;
+                    &:nth-child(1){
+                        img{
+                            margin-left: 6px;
+                        }
+                    }
+                    img{
+                        margin-right: 24px;
+                    }
+                }
+            }
+        }
+        .contact-form{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 32px;
+            @include mq('lg'){
+                width: 100%;
+                margin-top: 64px;
+            }
+            .form-control{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-bottom: 24px;
+                input{
+                    border: none;
+                    background: transparent;
+                    border-bottom: 2px solid $white;
+                    height: 30px;
+                    outline: none;
+                    color: $white;
+                    &:focus {
+                        color: $lightCoral;
+                        border-color: $lightCoral;
+                        & + label {
+                            color:$lightCoral;
+                        }
+                    }
+                }
+                label{
+                    color: $white;
+                    position: absolute;
+                    letter-spacing: 0.7px;
+                    padding: 10px 0px 10px 10px;
+                    top: -25px;
+                }
+                textarea{
+                    border: none;
+                    background: transparent;
+                    border-bottom: 2px solid $white;
+                    color: $white;
+                    outline: none;
+                    &:focus {
+                        color: $lightCoral;
+                        border-color: $lightCoral;
+                        & + label {
+                            color:$lightCoral;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

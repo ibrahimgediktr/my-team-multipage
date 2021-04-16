@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Team | Contact</title>
+
+    <link rel="stylesheet" href="../assets/scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">
+                <img src="../assets/icons/logo.svg" alt="myteam logo">
+            </a>
+            <ul class="navbar-list">
+                <li class="navbar-link" id="1">
+                    <a href="/">home</a>
+                </li>
+                <li class="navbar-link" id="2">
+                    <a href="/pages/about.html">about</a>
+                </li>
+                <li class="navbar-link" id="3">
+                    <button class="btn mobile-navbar-btn">Contact Us</button>
+                </li>
+            </ul>
+            <button class="btn navbar-btn">
+                <a href="/pages/contact.html">Contact Us</a>
+            </button>
+            <button class="toggle-menu">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+            </button>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div class="contact-container">
+            <header class="contact-header">
+                    <h1 class="contact-header-heading">
+                        Contact
+                    </h1>
+                    <h2 class="contact-header-subheading">Ask us about
+                    </h2>
+                    <ul class="contact-header-questions-list">
+                        <li class="contact-header-questions-list-item">
+                            <img src="../assets/icons/icon-person.svg" alt="">
+                            <h3>The quality of our talent network
+                            </h3>
+                        </li>
+                        <li class="contact-header-questions-list-item">
+                            <img src="../assets/icons/icon-cog.svg" alt="">
+                            <h3>Usage & implementation of our software
+                            </h3>
+                        </li>
+                        <li class="contact-header-questions-list-item">
+                            <img src="../assets/icons/icon-chart.svg" alt="">
+                            <h3>How we help drive innovation
+                            </h3>
+                        </li>
+                    </ul>
+            </header>
+        
+            <form action="" class="contact-form" id="contactForm" novalidate>
+                <div class="form-control">
+                    <input type="text" id="name">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-control">
+                    <input type="email" id="emailAddress">
+                    <label for="emailAddress">Email Address</label>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="companyName">
+                    <label for="companyName">Company Name</label>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="title">
+                    <label for="title">Title</label>
+                </div>
+                <div class="form-control">
+                    <textarea name="" id="message" cols="30" rows="10"></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="/" class="footer-logo">
+                <img src="../assets/icons/logo.svg" alt="Myteam footer logo">
+            </a>
+            <ul class="footer-nav-list">
+                <li class="footer-nav-link">
+                    <a href="/">home</a>
+                </li>
+                <li class="footer-nav-link">
+                    <a href="/about">about</a>
+                </li>
+            </ul>
+            <div class="footer-address">
+                <p>987 Hillcrest Lane
+                </p>
+                <p>Irvine, CA
+                </p>
+                <p>California 92714
+                </p>
+                <a href="tel:9498337432">Call Us : 949-833-7432
+                </a>
+            </div>
+            <ul class="footer-social-list">
+                <li class="footer-social-link">
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="footer-social-link">
+                    <a href="#">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </li>
+                <li class="footer-social-link">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer-copyright">Copyright 2020. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/contact.js"></script>
+    <script>
+        AOS.init()
+    </script>
+</body>
+</html>

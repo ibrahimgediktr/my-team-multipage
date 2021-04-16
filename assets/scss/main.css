@@ -1467,4 +1467,171 @@ h3 {
 .clients-container .clients-list-item .gadgets-now {
   width: 80px;
 }
+
+.contact {
+  background-color: #014e56;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 160px 0px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .contact-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.contact-container .contact-header {
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .contact-container .contact-header {
+    width: 100%;
+  }
+}
+
+.contact-container .contact-header-heading {
+  font-size: 64px;
+}
+
+@media (max-width: 992px) {
+  .contact-container .contact-header-heading {
+    font-size: 40px;
+  }
+}
+
+.contact-container .contact-header-subheading {
+  font-size: 32px;
+  color: #f67e7e;
+  margin: 64px 0px 32px;
+}
+
+.contact-container .contact-header-questions-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container .contact-header-questions-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px 0;
+}
+
+.contact-container .contact-header-questions-list-item:nth-child(1) img {
+  margin-left: 6px;
+}
+
+.contact-container .contact-header-questions-list-item img {
+  margin-right: 24px;
+}
+
+.contact-container .contact-form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 32px;
+}
+
+@media (max-width: 992px) {
+  .contact-container .contact-form {
+    width: 100%;
+    margin-top: 64px;
+  }
+}
+
+.contact-container .contact-form .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.contact-container .contact-form .form-control input {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #ffffff;
+  height: 30px;
+  outline: none;
+  color: #ffffff;
+}
+
+.contact-container .contact-form .form-control input:focus {
+  color: #f67e7e;
+  border-color: #f67e7e;
+}
+
+.contact-container .contact-form .form-control input:focus + label {
+  color: #f67e7e;
+}
+
+.contact-container .contact-form .form-control label {
+  color: #ffffff;
+  position: absolute;
+  letter-spacing: 0.7px;
+  padding: 10px 0px 10px 10px;
+  top: -25px;
+}
+
+.contact-container .contact-form .form-control textarea {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  outline: none;
+}
+
+.contact-container .contact-form .form-control textarea:focus {
+  color: #f67e7e;
+  border-color: #f67e7e;
+}
+
+.contact-container .contact-form .form-control textarea:focus + label {
+  color: #f67e7e;
+}
 /*# sourceMappingURL=main.css.map */
