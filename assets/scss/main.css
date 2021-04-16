@@ -1161,8 +1161,8 @@ h3 {
 
 .about-hero-after-bg {
   position: absolute;
-  right: -100px;
-  bottom: -120px;
+  right: -80px;
+  bottom: -110px;
 }
 
 .directors {
@@ -1341,6 +1341,7 @@ h3 {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   z-index: -1;
+  opacity: 0;
 }
 
 .directors-container .directors-card-grid .directors-card-hidden-heading {
@@ -1370,6 +1371,7 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   z-index: 1;
+  opacity: 1;
 }
 
 .clients {
