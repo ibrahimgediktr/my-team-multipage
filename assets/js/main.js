@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     var toggleMenu = $('.toggle-menu');
     var navList = $('.navbar-list');
     var navLinks = $('.navbar-link');

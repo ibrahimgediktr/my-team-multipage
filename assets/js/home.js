@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 // Home Hero After Background Animations
 gsap.from('.after-bg-path-1', {
     delay: 0.4,
@@ -88,4 +90,5 @@ ScrollTrigger.create({
     toggleClass: 'active',
     start: 'top 80%',
     end: 'top 0%',
+})
 })

@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 // About Hero Section Animations
 gsap.from('.about-hero-heading', {
     delay: 1,
@@ -81,4 +83,5 @@ directorsCardBtn.each(function () {
             })
         }
     })
+})
 })
