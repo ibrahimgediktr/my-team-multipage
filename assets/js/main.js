@@ -35,4 +35,46 @@ $(document).ready(function () {
             }
         })
     })
+
+    // Contact Page Form Validation
+    $(function(){
+    var $contactForm = $('#contactForm');
+    if($contactForm.length){
+        $contactForm.validate({
+            rules:{
+                name:"required",
+                emailAddress:{
+                    required:true,
+                    email:true,
+                },
+                companyName:"required",
+                title:"required",
+                message:"required"
+            },
+            messages:{
+                name:{
+                    required:'This field is required'
+                },
+                emailAddress:{
+                    required:'This field is required'
+                },
+                companyName:{
+                    required:'This field is required'
+                },
+                title:{
+                    required:'This field is required'
+                },
+                message:{
+                    required:'This field is required'
+                },
+            },
+            submitHandler: function(form){
+                form.submit();
+            }
+        })
+    }
+  
+    })
+    
+    console.log(contactForm);
 })

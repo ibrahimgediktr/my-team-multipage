@@ -1565,11 +1565,17 @@ h3 {
   border-color: #f67e7e;
 }
 
-.contact-container .contact-form .form-control input:focus + label {
+.contact-container .contact-form .form-control input:focus + .form-control-label {
   color: #f67e7e;
 }
 
-.contact-container .contact-form .form-control label {
+.contact-container .contact-form .form-control label.error {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #f67e7e;
+}
+
+.contact-container .contact-form .form-control-label {
   color: #ffffff;
   position: absolute;
   letter-spacing: 0.7px;
@@ -1591,7 +1597,7 @@ h3 {
   border-color: #f67e7e;
 }
 
-.contact-container .contact-form .form-control textarea:focus + label {
+.contact-container .contact-form .form-control textarea:focus + .form-control-label {
   color: #f67e7e;
 }
 

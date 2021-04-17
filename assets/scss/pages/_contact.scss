@@ -69,12 +69,17 @@
                     &:focus {
                         color: $lightCoral;
                         border-color: $lightCoral;
-                        & + label {
+                        & + .form-control-label {
                             color:$lightCoral;
                         }
                     }
                 }
-                label{
+                label.error{
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    color: $lightCoral;
+                }
+                &-label{
                     color: $white;
                     position: absolute;
                     letter-spacing: 0.7px;
@@ -91,7 +96,7 @@
                     &:focus {
                         color: $lightCoral;
                         border-color: $lightCoral;
-                        & + label {
+                        & + .form-control-label {
                             color:$lightCoral;
                         }
                     }

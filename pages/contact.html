@@ -73,28 +73,28 @@
                     </ul>
             </header>
         
-            <form action="" class="contact-form" id="contactForm" novalidate>
+            <form class="contact-form" id="contactForm" novalidate>
                 <div class="form-control" data-aos="fade-down" data-aos-delay="200" data-aos-duration="800">
-                    <input type="text" id="name">
-                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="name" class="form-control-label">Name</label>
                 </div>
                 <div class="form-control" data-aos="fade-down" data-aos-delay="400" data-aos-duration="800">
-                    <input type="email" id="emailAddress">
-                    <label for="emailAddress">Email Address</label>
+                    <input type="email" id="emailAddress" name="emailAddress">
+                    <label for="emailAddress" class="form-control-label">Email Address</label>
                 </div>
                 <div class="form-control" data-aos="fade-down" data-aos-delay="600" data-aos-duration="800">
-                    <input type="text" id="companyName">
-                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" name="companyName">
+                    <label for="companyName" class="form-control-label">Company Name</label>
                 </div>
                 <div class="form-control" data-aos="fade-down" data-aos-delay="800" data-aos-duration="800">
-                    <input type="text" id="title">
-                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                    <label for="title" class="form-control-label">Title</label>
                 </div>
                 <div class="form-control" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
-                    <textarea name="" id="message" cols="30" rows="10"></textarea>
-                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" name="message"></textarea>
+                    <label for="message" class="form-control-label">Message</label>
                 </div>
-                <button class="btn contact-form-btn" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="800" data-aos-offset="0">Submit</button>
+                <button type="submit" class="btn contact-form-btn" data-aos="fade-down" data-aos-delay="1200" data-aos-duration="800" data-aos-offset="0">Submit</button>
             </form>
         </div>
     </section>
@@ -147,6 +147,7 @@
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../assets/js/main.js"></script>
     <script>
