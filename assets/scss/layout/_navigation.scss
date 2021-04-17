@@ -10,8 +10,13 @@
     }
     &.scrolled{
         margin-top: 0;
-        padding: 24px 0;
+        padding: 16px 0;
         background: $sacramentoGreen;
+        .navbar-brand{
+            img{
+                width: 150px
+            }
+        }
     }
     &-container{
         @include container;
@@ -24,7 +29,7 @@
         .navbar-brand{
             margin-right: 48px;
             @include mq('lg'){
-                margin-right: 0;
+                margin-right: 40px;
             }
         }
         .navbar-list{
@@ -56,7 +61,7 @@
             }
             .navbar-link{
                 margin-right: 40px;
-                transform: translateX(100px) scale(1.2);
+                font-size: 16px;
                 @include mq('md'){
                     margin-right:0;
                     padding: 4vh 0;
