@@ -1,38 +1,32 @@
 $(document).ready(function () {
-    var toggleMenu = $('.toggle-menu');
-    var navList = $('.navbar-list');
-    var navLinks = $('.navbar-link');
-    var nav = $('.navbar');
+    var $toggleMenu = $('.toggle-menu');
+    var $navList = $('.navbar-list');
+    var $navLinks = $('.navbar-link');
+    var $nav = $('.navbar');
 
-    toggleMenu.click(function () {
-        navList.toggleClass('active');
-        toggleMenu.toggleClass('active');
+    $toggleMenu.click(function () {
+        $navList.toggleClass('active');
+        $toggleMenu.toggleClass('active');
     });
 
+    // Navbar Scrolled Fixed
     $(window).scroll(function () {
         if ($(this).scrollTop() > 20) {
-            nav.addClass("scrolled");
+            $nav.addClass("scrolled");
         } else {
-            nav.removeClass("scrolled");
+            $nav.removeClass("scrolled");
         }
     });
 
 
     // Meet Directors Hidden Card
-    var directorsCardBtn = $('.directors-card-btn');
+    var $directorsCardBtn = $('.directors-card-btn');
+    var $directorsCard = $('.directors-card');
 
-    directorsCardBtn.each(function () {
+    $directorsCardBtn.each(function (index) {
         $(this).on('click', function () {
-            $(this).toggleClass('active');
-            $(this).parent().toggleClass('active');
-            if ($(this).parent().hasClass('active')) {
-                $(this).parent().prev().removeClass('active');
-                gsap.fromTo('.directors-card-hidden.active > *', {
-                    x: 350,
-                }, {
-                    x: 0,
-                })
-            }
+            $directorsCard.removeClass('active')
+            $(this).parent().addClass('active')
         })
     })
 
@@ -75,6 +69,4 @@ $(document).ready(function () {
     }
   
     })
-    
-    console.log(contactForm);
 })

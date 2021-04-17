@@ -185,7 +185,7 @@ h3 {
 
 .cta-container .cta-btn {
   background: transparent;
-  border: 2px solid #012f34;
+  border: 3px solid #012f34;
   color: #012f34;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -227,8 +227,12 @@ h3 {
 
 .navbar.scrolled {
   margin-top: 0;
-  padding: 24px 0;
+  padding: 16px 0;
   background: #012f34;
+}
+
+.navbar.scrolled .navbar-brand img {
+  width: 150px;
 }
 
 .navbar-container {
@@ -265,7 +269,7 @@ h3 {
 
 @media (max-width: 992px) {
   .navbar-container .navbar-brand {
-    margin-right: 0;
+    margin-right: 40px;
   }
 }
 
@@ -325,8 +329,7 @@ h3 {
 
 .navbar-container .navbar-list .navbar-link {
   margin-right: 40px;
-  -webkit-transform: translateX(100px) scale(1.2);
-          transform: translateX(100px) scale(1.2);
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
@@ -340,7 +343,7 @@ h3 {
   display: none;
   background: transparent;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
   padding: 9px 32px;
   font-size: 18px;
 }
@@ -363,7 +366,7 @@ h3 {
 .navbar-container .navbar-btn {
   background: transparent;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
   padding: 9px 32px;
   font-size: 18px;
 }
@@ -1264,15 +1267,6 @@ h3 {
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
-.directors-container .directors-card-grid .directors-card-btn.active {
-  background: #79c8c7;
-}
-
-.directors-container .directors-card-grid .directors-card-btn.active svg {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 .directors-container .directors-card-grid .directors-card-hidden {
   position: absolute;
   background: #002529;
@@ -1330,6 +1324,15 @@ h3 {
   display: flex;
   z-index: 1;
   opacity: 1;
+}
+
+.directors-container .directors-card-grid .directors-card.active .directors-card-btn {
+  background: #79c8c7;
+}
+
+.directors-container .directors-card-grid .directors-card.active .directors-card-btn svg {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .clients {

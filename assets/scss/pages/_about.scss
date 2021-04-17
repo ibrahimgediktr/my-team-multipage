@@ -146,12 +146,12 @@
                         transform: rotate(0deg);
                         transition: transform 0.25s ease-in-out;
                     }
-                    &.active {
-                        background: $raptureBlue;
-                        svg {
-                            transform: rotate(45deg);
-                        }
-                    }
+                    // &.active {
+                    //     background: $raptureBlue;
+                    //     svg {
+                    //         transform: rotate(45deg);
+                    //     }
+                    // }
                 }
                 &-hidden {
                     position: absolute;
@@ -195,6 +195,12 @@
                         display: flex;
                         z-index: 1;
                         opacity: 1;
+                    }
+                    .directors-card-btn{
+                        background: $raptureBlue;
+                        svg {
+                            transform: rotate(45deg);
+                        }
                     }
                 }
             }
