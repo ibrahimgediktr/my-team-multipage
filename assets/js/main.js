@@ -7,17 +7,6 @@ $(document).ready(function () {
     toggleMenu.click(function () {
         navList.toggleClass('active');
         toggleMenu.toggleClass('active');
-        if (navList.hasClass('active')) {
-            gsap.fromTo(navLinks, {
-                delay: 0.2,
-                x: 100,
-                scale: 0,
-            }, {
-                x: 0,
-                scale: 1,
-                stagger: 0.2
-            })
-        }
     });
 
     $(window).scroll(function () {
@@ -29,19 +18,21 @@ $(document).ready(function () {
     });
 
 
-    // Navbar Animations
-    gsap.from('.navbar-brand', {
-        duration: 1,
-        x: -200,
-        scale: 0,
-    })
-    gsap.from('.navbar-list > li', {
-        scale: 0,
-        opacity: 0,
-        delay: 0.4,
-        stagger: 0.2,
-    })
-    gsap.from('.navbar-btn', {
-        scale: 0,
+    // Meet Directors Hidden Card
+    var directorsCardBtn = $('.directors-card-btn');
+
+    directorsCardBtn.each(function () {
+        $(this).on('click', function () {
+            $(this).toggleClass('active');
+            $(this).parent().toggleClass('active');
+            if ($(this).parent().hasClass('active')) {
+                $(this).parent().prev().removeClass('active');
+                gsap.fromTo('.directors-card-hidden.active > *', {
+                    x: 350,
+                }, {
+                    x: 0,
+                })
+            }
+        })
     })
 })

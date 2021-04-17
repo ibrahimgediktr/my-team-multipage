@@ -97,14 +97,6 @@
         position: absolute;
         right: -100px;
         bottom: -30px;
-        transform-origin: right;
-        transform: scaleY(0) translateX(100px);
-        transition: 0.45s;
-        transition-delay: 0.15s;
-        &.active {
-            transform: scaleY(1) translateX(0);
-            transition-delay: 0s;
-        }
         @include mq("lg") {
             bottom: -100px;
         }
@@ -198,27 +190,11 @@
         position: absolute;
         top: 0;
         left: 0;
-        transform-origin: left;
-        transform: scaleX(0);
-        transition: 0.6s;
-        transition-delay: 0.6s;
-        &.active {
-            transform: scaleX(1);
-            transition-delay: 0s;
-        }
     }
     .testimonial-after-bg {
         position: absolute;
         right: 0;
         bottom: -5px;
-        transform-origin: right;
-        transform: scale(4) translateX(200px);
-        transition: 0.6s;
-        transition-delay: 0.6s;
-        &.active {
-            transform: scale(1) translateX(0);
-            transition-delay: 0s;
-        }
     }
     &-container {
         @include container;
