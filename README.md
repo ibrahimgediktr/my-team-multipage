@@ -5,7 +5,7 @@
 <img src="./preview.jpg" style="border-radius:8px; width:650px">
 
  ### Todo list
- * [ ] Home page 
- * [ ] About page
- * [ ] Contact page
- * [ ] Page animations
+ * [x] Home page 
+ * [x] About page
+ * [x] Contact page
+ * [x] Page animations
